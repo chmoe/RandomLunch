@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>中午吃什么</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <h1>中午吃什么</h1>
+
+    <div id="login-container">
+        <h2>登录</h2>
+        <form id="login-form">
+            <label for="username">用户名:</label>
+            <input type="text" id="username" required>
+            <br>
+            <label for="password">密码:</label>
+            <input type="password" id="password" required>
+            <br>
+            <button type="submit">登录</button>
+        </form>
+    </div>
+
+    <div id="greeting-container" style="display: none;">
+        <h2 id="greeting"></h2>
+    </div>
+
+    <div id="data-container" style="display: none;">
+        <h2>表格</h2>
+        <button id="fetch-data-button">刷新表中的数据</button>
+        <table id="data-table">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>品名</th>
+                    <th>上次决定时间</th>
+                </tr>
+            </thead>
+            <tbody id="data-list"></tbody>
+        </table>
+        <br>
+        <input type="checkbox" id="allow-repeats">
+        <label for="allow-repeats">允许重复选择本周吃过的内容</label>
+        <br>
+        <button id="random-button">随机</button>
+        <button id="decide-button" disabled>决定</button>
+        <br>
+        <p id="result"></p>
+    </div>
+
+    <script src="./js/cookies.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="js/app.js"></script>
+    
+</body>
+
+</html>

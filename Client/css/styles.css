@@ -1,0 +1,82 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f5f5f5;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+.container {
+    margin-top: 30px;
+}
+
+#login-container,
+#data-container,
+#greeting-container {
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+}
+
+#login-container {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+#data-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#data-container button {
+    margin: 10px;
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#data-container button:hover {
+    background-color: #0056b3;
+}
+
+#data-table {
+    width: 80%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+#data-table th,
+#data-table td {
+    padding: 8px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+#data-table th {
+    background-color: #f2f2f2;
+}
+
+.highlight {
+    background-color: pink;
+}
+
+.used {
+    color: gray;
+}
+
+#result {
+    font-size: 18px;
+    text-align: center;
+    margin-top: 20px;
+}
